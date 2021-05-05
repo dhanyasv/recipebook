@@ -1,0 +1,26 @@
+<div class="recipe"  (click)=openRecipe()>
+<img class="listImg" src={{recipe.imgSrc}} alt="dhanya" />
+<div class="recipeDetail">
+    <h3>{{ recipe.title }}</h3>
+</div>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal" *ngIf="showRecipe">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" (click)="closeModal()">&times;</span>
+      <div class="recipeModal">
+          <div class="imgAndTitle">
+            <h3>{{ recipe.title }}</h3>
+            <img class="modalImg" src={{recipe.imgSrc}} alt="dhanya" />
+          </div>
+            <div>
+            <h5>{{ recipe.preparationTime }}</h5>
+        <h4>{{ recipe.ingredients }}</h4>
+        <p>{{ recipe.method }}</p>
+        </div>
+      </div>
+    </div>
+  
+  </div>

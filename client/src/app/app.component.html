@@ -1,0 +1,17 @@
+<header>
+    <h2>
+        " <i>Laughter is brightest where food is best</i> "
+    </h2>
+</header>
+<div class="wrap">
+    <div class="search">
+       <input type="text" class="searchTerm" name="search" [(ngModel)]="searchText" autocomplete="off" 
+       placeholder="What are you looking for?">
+       <button type="submit" class="searchButton">
+         <i class="fa fa-search"></i>
+      </button>
+    </div>
+ </div>
+<div class="container recipeAll">
+    <recipe *ngFor="let recipe of recipes | filter:searchText" [recipe]="recipe"></recipe>
+</div>

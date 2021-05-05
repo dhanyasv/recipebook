@@ -14,7 +14,7 @@ app.use('/recipes',recipeRoutes);
 
 //connect to db
 //connect to mongo db
-const url = 'mongodbURl';
+const url = 'mongodb+srv://dhanya_FE_89:adwin%23123@cluster0.chegq.mongodb.net/recipeapp?retryWrites=true&w=majority';
 mongoose.connect(url, {useNewUrlParser:true,useUnifiedTopology: true }, function(err, db) {
     if(err) {
         console.log(err);
