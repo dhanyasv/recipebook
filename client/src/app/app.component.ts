@@ -19,5 +19,7 @@ export class AppComponent implements OnInit{
       this.recipes = data;
     })
   }
-
+  getSearchValue(searchVal){
+    this.searchText = searchVal;
+  }
 }

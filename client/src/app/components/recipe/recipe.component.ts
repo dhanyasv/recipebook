@@ -22,4 +22,7 @@ export class RecipeComponent implements OnInit{
 
         this.showRecipe = false;
     }
+    getRecipe(){
+
+    }
 }

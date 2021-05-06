@@ -1,7 +1,8 @@
-<div class="recipe"  (click)=openRecipe()>
+<div class="recipe" >
 <img class="listImg" src={{recipe.imgSrc}} alt="dhanya" />
 <div class="recipeDetail">
     <h3>{{ recipe.title }}</h3>
+    <button class="getRecipeButn" (click)="openRecipe()">Get Recipe</button>
 </div>
 </div>
 <!-- The Modal -->
@@ -12,13 +13,13 @@
       <span class="close" (click)="closeModal()">&times;</span>
       <div class="recipeModal">
           <div class="imgAndTitle">
-            <h3>{{ recipe.title }}</h3>
             <img class="modalImg" src={{recipe.imgSrc}} alt="dhanya" />
           </div>
             <div>
-            <h5>{{ recipe.preparationTime }}</h5>
-        <h4>{{ recipe.ingredients }}</h4>
-        <p>{{ recipe.method }}</p>
+                <h3>{{ recipe.title }}</h3>
+                <h5>⏰ &nbsp;&nbsp;&nbsp;{{ recipe.preparationTime }}</h5>
+                <h4>{{ recipe.ingredients }}</h4>
+                <p>{{ recipe.method }}</p>
         </div>
       </div>
     </div>

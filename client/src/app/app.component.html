@@ -1,17 +1,10 @@
-<header>
-    <h2>
-        " <i>Laughter is brightest where food is best</i> "
-    </h2>
-</header>
-<div class="wrap">
-    <div class="search">
-       <input type="text" class="searchTerm" name="search" [(ngModel)]="searchText" autocomplete="off" 
-       placeholder="What are you looking for?">
-       <button type="submit" class="searchButton">
-         <i class="fa fa-search"></i>
-      </button>
+<app-header></app-header>
+<app-search (searchValue)="getSearchValue($event)"></app-search>
+<ng-container  *ngIf="( recipes |  filter:searchText) as result">
+    <div class="container recipeAll">
+        <recipe *ngFor="let recipe of result | filter:searchText" [recipe]="recipe"></recipe>
     </div>
- </div>
-<div class="container recipeAll">
-    <recipe *ngFor="let recipe of recipes | filter:searchText" [recipe]="recipe"></recipe>
-</div>
+    <h4 class="noResultH4" *ngIf="result.length === 0">
+        Sorry...🙁..we dont have the recipe of {{searchText}}</h4>
+ </ng-container>
+ <app-footer></app-footer>

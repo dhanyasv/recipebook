@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Source+Sans+Pro:wght@300;400&display=swap");
 .listImg {
   height: 200px;
   width: 100%;
@@ -7,6 +8,7 @@
 .modalImg {
   height: 100%;
   width: 100%;
+  border-radius: 10px;
 }
 .imgAndTitle {
   overflow: hidden;
@@ -20,6 +22,18 @@
 .recipeDetail {
   text-align: center;
   padding: 10px 20px;
+}
+/* get recipe btn*/
+.getRecipeButn {
+  padding: 5px 10px;
+  width: 110px;
+  height: 35px;
+  border-radius: 10px;
+  background: wheat;
+  border: none;
+  color: brown;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* The Modal (background) */
 .modal {
@@ -38,21 +52,28 @@
 .recipeModal {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  color: black;
+}
+.recipeModal p {
+  line-height: 1.5rem;
+  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  z-index: 1;
 }
 .modal-content {
   background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding-left: 0;
   padding-bottom: 0;
-  border: 1px solid #888;
+  border: 1px solid gray;
+  border-radius: 10px;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button */
 .close {
-  color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
   margin-right: 20px;
 }

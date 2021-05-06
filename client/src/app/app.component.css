@@ -1,18 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-header {
-  padding-bottom: 20px;
-  padding-top: 20px;
-  color: brown;
-  background: wheat;
-}
-h3,
-h2 {
-  text-align: center;
 }
 .container {
   margin: 0 auto;
@@ -23,8 +12,16 @@ h2 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
+  font-family: "Itim", cursive;
+  color: brown;
 }
-
+.noResultH4 {
+  color: brown;
+  text-align: center;
+  margin-top: 29px;
+  font-size: 52px;
+  font-family: "Itim", cursive;
+}
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
   .recipeAll {
@@ -68,20 +65,4 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
   }
-}
-/*SEARCH BAR*/
-.search {
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.searchButton {
-  height: 40px;
-  width: 45px;
-  background: chocolate;
-}
-.searchTerm {
-  width: 50%;
-  padding: 10px 10px;
-  margin: 5px;
 }
