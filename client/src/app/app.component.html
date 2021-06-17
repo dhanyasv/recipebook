@@ -1,5 +1,7 @@
-<app-header></app-header>
-<app-search (searchValue)="getSearchValue($event)"></app-search>
+<div class="fixed-menu">
+    <app-header></app-header>
+    <app-search (searchValue)="getSearchValue($event)"></app-search>
+</div>
 <ng-container  *ngIf="( recipes |  filter:searchText) as result">
     <div class="container recipeAll">
         <recipe *ngFor="let recipe of result | filter:searchText" [recipe]="recipe"></recipe>

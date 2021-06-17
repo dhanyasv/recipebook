@@ -3,12 +3,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+.fixed-menu {
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
 .container {
   margin: 0 auto;
   text-align: center;
   width: 80%;
 }
 .recipeAll {
+  margin-top: 150px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
@@ -25,6 +31,7 @@
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
   .recipeAll {
+    margin-top: 180px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 15px;

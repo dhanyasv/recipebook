@@ -18,8 +18,6 @@ export class RecipeComponent implements OnInit{
         this.showRecipe = !this.showRecipe;
     }
     closeModal(){
-        console.log("dhanya")
-
         this.showRecipe = false;
     }
     getRecipe(){
